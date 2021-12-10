@@ -10,13 +10,12 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-header {
-  background: radial-gradient(
-    circle,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
-  );
-  padding: 2rem;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: 60%;
 }
 
 footer {
@@ -42,8 +41,35 @@ footer p {
   text-align: center;
 }
 
+header {
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  padding: 2rem;
+}
+
 h1 {
   clear: left;
+  font-size: 2.3vw;
+}
+h2 {
+  font-size: 2vw;
+}
+h3 {
+  font-size: 1.7vw;
+}
+h4 {
+  font-size: 1.5vw;
+}
+h5 {
+  font-size: 1.3vw;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1vw;
 }
 
 header h1 {
@@ -59,9 +85,6 @@ header h4 {
 .imgheader {
   float: left;
 }
-.textheader {
-  display: inline-block;
-}
 
 main {
   background-color: rgba(34, 193, 195, 0.5);
@@ -73,29 +96,6 @@ main {
 .maincontent {
   display: flex;
   flex-direction: row;
-}
-
-.profilepic {
-  float: left;
-  padding-right: 20px;
-}
-
-.section2 {
-  flex: 7;
-  column-gap: 20px;
-  column-count: 2;
-}
-.section1 {
-  flex: 2;
-}
-.section1 a {
-  color: #ff3;
-  font-weight: bold;
-  padding-left: 20dp;
-}
-ul p {
-  font-weight: bold;
-  font-size: 80dp;
 }
 
 nav {
@@ -118,10 +118,41 @@ nav a {
   padding: 20dp;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-  height: 60%;
+.profilepic {
+  float: left;
+  padding-right: 20px;
+}
+
+.section2 {
+  flex: 7;
+  column-gap: 20px;
+  column-count: 2;
+}
+
+@media screen and (max-width: 1000px) {
+  .section2 .section1 {
+    column-count: 1;
+  }
+}
+
+.section1 {
+  flex: 2;
+}
+.section1 a {
+  color: #ff3;
+  font-weight: bold;
+  padding-left: 20dp;
+}
+
+.textheader {
+  display: inline-block;
+}
+
+ul p {
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+ul li {
+  font-size: 1vw;
 }

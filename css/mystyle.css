@@ -14,6 +14,15 @@ header {
   padding: 2rem;
 }
 
+h4 {
+  font-size: 1.5vw;
+}
+
+h1 {
+  font-size: 2.3vw;
+  clear: left;
+}
+
 footer {
   background: radial-gradient(
     circle,
@@ -37,25 +46,20 @@ footer p {
   text-align: center;
 }
 
-h1 {
-  clear: left;
-}
-
 header h1 {
+  font-size: 2.3vw;
   margin-bottom: 0px;
   margin-left: 1rem;
 }
 
 header h4 {
+  font-size: 1.5vw;
   margin-top: 0px;
   padding-left: 5rem;
 }
 
 .imgheader {
   float: left;
-}
-.textheader {
-  display: inline-block;
 }
 
 main {
@@ -70,31 +74,10 @@ main {
   flex-direction: row;
 }
 
-.profilepic {
-  float: left;
-  padding-right: 20px;
-}
-
-.section1 {
-  flex: 7;
-}
-.section2 {
-  flex: 2;
-}
-.section2 a {
-  color: #ff3;
-  font-weight: bold;
-  padding-left: 20dp;
-}
-ul p {
-  font-weight: bold;
-  font-size: 80dp;
-}
-
 nav {
   background-color: black;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: bold;
   text-align: center;
   padding: 15px;
@@ -109,4 +92,37 @@ nav a {
   margin-top: 10dp;
   margin-bottom: 10dp;
   padding: 20dp;
+}
+
+.textheader {
+  display: inline-block;
+}
+
+.profilepic {
+  float: left;
+  padding-right: 20px;
+}
+p {
+  font-size: 1vw;
+}
+
+.section1 {
+  flex: 7;
+}
+
+.section2 {
+  flex: 2;
+}
+.section2 a {
+  color: #ff3;
+  font-weight: bold;
+  padding-left: 20dp;
+}
+ul p {
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+ul li {
+  font-size: 1vw;
 }
