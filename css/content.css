@@ -1,0 +1,126 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.contact {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  padding: 2rem;
+}
+
+footer {
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  text-align: center;
+  margin-bottom: 0dp;
+  /* position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px; */
+}
+
+footer a {
+  display: block;
+}
+footer p {
+  margin: 0px;
+  text-align: center;
+}
+
+h1 {
+  clear: left;
+}
+
+header h1 {
+  margin-bottom: 0px;
+  margin-left: 1rem;
+}
+
+header h4 {
+  margin-top: 0px;
+  padding-left: 5rem;
+}
+
+.imgheader {
+  float: left;
+}
+.textheader {
+  display: inline-block;
+}
+
+main {
+  background-color: rgba(34, 193, 195, 0.5);
+  margin-left: 10dp;
+  margin-right: 10dp;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.maincontent {
+  display: flex;
+  flex-direction: row;
+}
+
+.profilepic {
+  float: left;
+  padding-right: 20px;
+}
+
+.section2 {
+  flex: 7;
+  column-gap: 20px;
+  column-count: 2;
+}
+.section1 {
+  flex: 2;
+}
+.section1 a {
+  color: #ff3;
+  font-weight: bold;
+  padding-left: 20dp;
+}
+ul p {
+  font-weight: bold;
+  font-size: 80dp;
+}
+
+nav {
+  background-color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+nav a {
+  font-style: normal;
+  color: #ff2;
+  margin-top: 10dp;
+  margin-bottom: 10dp;
+  padding: 20dp;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: 60%;
+}
