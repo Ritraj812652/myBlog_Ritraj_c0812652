@@ -1,52 +1,68 @@
-body {
-  margin: 0px;
-  padding: 0px;
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-}
-header {
-  background: radial-gradient(
-    circle,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
-  );
-  padding: 2rem;
-}
+@media screen and (max-width: 425px) {
+  /*Styles for mobile layout*/
 
-h4 {
-  font-size: 1.5vw;
-}
+  img {
+    /*styling fluid image*/
+    max-width: 50%;
+  }
 
-h1 {
-  font-size: 2.3vw;
-  clear: left;
-}
+  body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #ff9;
+  }
 
-footer {
-  background: radial-gradient(
-    circle,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
-  );
-  text-align: center;
-  margin-bottom: 0dp;
-  /* position: absolute;
+  #container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header {
+    background: radial-gradient(
+      circle,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(253, 187, 45, 1) 100%
+    );
+    padding: 2rem;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    clear: left;
+  }
+
+  footer {
+    background: radial-gradient(
+      circle,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(253, 187, 45, 1) 100%
+    );
+    text-align: center;
+    margin-bottom: 0dp;
+    /* position: absolute;
   left: 0px;
   right: 0px;
   bottom: 0px; */
-}
+  }
 
-footer a {
-  display: block;
-  color: #ff2;
-}
-footer p {
-  margin: 0px;
-  text-align: center;
-}
+  footer a {
+    display: block;
+    color: #ff2;
+  }
+  footer p {
+    margin: 0px;
+    text-align: center;
+  }
 
-header h1 {
+  /* header h1 {
   font-size: 2.3vw;
   margin-bottom: 0px;
   margin-left: 1rem;
@@ -56,73 +72,242 @@ header h4 {
   font-size: 1.5vw;
   margin-top: 0px;
   padding-left: 5rem;
+} */
+
+  .imgheader {
+    float: left;
+  }
+
+  main {
+    background-color: rgba(34, 193, 195, 0.5);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 1em;
+    padding: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .maincontent {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  nav li {
+    background-color: black;
+    border-radius: 2em;
+    list-style-type: none;
+    margin: 0.3em;
+    border-radius: 2em;
+    color: #ff2;
+  }
+
+  nav > ul {
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  nav a {
+    color: #ff2;
+    text-decoration: none;
+  }
+
+  /*styles to mobile*/
+
+  .mobile {
+    display: inline;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .textheader {
+    display: inline-block;
+  }
+
+  .profilepic {
+    float: left;
+    padding-right: 20px;
+  }
+  p {
+    font-size: 1em;
+  }
+
+  .section1 {
+    flex: 7;
+  }
+
+  .section2 {
+    flex: 2;
+  }
+  .section2 a {
+    color: #ff3;
+    font-weight: bold;
+    padding-left: 20dp;
+  }
+  .section2 ul li a {
+    font-size: 1em;
+  }
+  ul p {
+    font-weight: bold;
+    font-size: 1em;
+  }
 }
 
-.imgheader {
-  float: left;
-}
+@media screen and (min-width: 426px) {
+  img {
+    /*styling fluid image*/
+    max-width: 20%;
+  }
 
-main {
-  background-color: rgba(34, 193, 195, 0.5);
-  margin-left: 10dp;
-  margin-right: 10dp;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+  .mobile {
+    display: none;
+  }
 
-.maincontent {
-  display: flex;
-  flex-direction: row;
-}
+  .desktop {
+    display: block;
+  }
 
-nav {
-  background-color: black;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-align: center;
-  padding: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 20px;
-}
+  body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #ff9;
+  }
 
-nav a {
-  font-style: normal;
-  color: #ff2;
-  margin-top: 10dp;
-  margin-bottom: 10dp;
-  padding: 20dp;
-}
+  #container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header {
+    background: radial-gradient(
+      circle,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(253, 187, 45, 1) 100%
+    );
+    padding: 2rem;
+  }
 
-.textheader {
-  display: inline-block;
-}
+  h4 {
+    font-size: 1.5vw;
+  }
 
-.profilepic {
-  float: left;
-  padding-right: 20px;
-}
-p {
-  font-size: 1vw;
-}
+  h1 {
+    font-size: 2.3vw;
+    clear: left;
+  }
 
-.section1 {
-  flex: 7;
-}
+  footer {
+    background: radial-gradient(
+      circle,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(253, 187, 45, 1) 100%
+    );
+    text-align: center;
+    margin-bottom: 0dp;
+    /* position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px; */
+  }
 
-.section2 {
-  flex: 2;
-}
-.section2 a {
-  color: #ff3;
-  font-weight: bold;
-  padding-left: 20dp;
-}
-ul p {
-  font-weight: bold;
-  font-size: 1vw;
-}
+  footer a {
+    display: block;
+    color: #ff2;
+  }
+  footer p {
+    margin: 0px;
+    text-align: center;
+  }
 
-ul li {
-  font-size: 1vw;
+  header h1 {
+    font-size: 2.3vw;
+    margin-bottom: 0px;
+    margin-left: 1rem;
+  }
+
+  header h4 {
+    font-size: 1.5vw;
+    margin-top: 0px;
+    padding-left: 5rem;
+  }
+
+  .imgheader {
+    float: left;
+  }
+
+  main {
+    background-color: rgba(34, 193, 195, 0.5);
+    margin-left: 10dp;
+    margin-right: 10dp;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .maincontent {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav {
+    background-color: black;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 1.5em;
+    padding: 1em;
+  }
+
+  nav a {
+    font-style: normal;
+    color: #ff2;
+    /* margin-top: 10dp;
+    margin-bottom: 10dp;
+    padding: 20dp; */
+    text-decoration: none;
+  }
+
+  .textheader {
+    display: inline-block;
+  }
+
+  .profilepic {
+    float: left;
+    padding-right: 20px;
+  }
+  p {
+    font-size: 1vw;
+  }
+
+  .section1 {
+    flex: 7;
+  }
+
+  .section2 {
+    flex: 2;
+  }
+  .section2 a {
+    color: #ff3;
+    font-weight: bold;
+    padding-left: 20dp;
+  }
+  ul p {
+    font-weight: bold;
+    font-size: 1vw;
+  }
+
+  ul li {
+    font-size: 1.5vw;
+  }
 }
